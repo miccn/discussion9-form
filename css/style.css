@@ -1,0 +1,105 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  :root{
+    --light: #FDF0D1;
+    --mid-light: #CBAEB8;
+    --mid-dark: #6B4357;
+    --dark: #381F24;
+}
+  .madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .skip-link{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: var(--dark);
+    color: var(--light);
+    z-index: 999;
+    transition: top 0.3s ease;
+    text-decoration: none;
+}
+
+.skip-link:focus{
+    top: 0;
+}
+
+.skip-link:focus-visible{
+    top: 0;
+}
+
+.skip-link:not(:focus):not(:active) {
+    top: -40px;
+}
+  
+body {font-family: madimi-one-regular, monospace, sans-serif;}
+
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  width:70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #702082;
+  background: #CFC096;
+}
+
+.radio {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* background: #575294; */
+  color: #702082;
+}
+
+#name {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #CFC096;
+  color: #9B9A6D;
+}
+
+#message {
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #316e34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3d9841;
+}
+
+.radio label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.radio input[type="radio"] {
+  vertical-align: middle;
+}
+
+
