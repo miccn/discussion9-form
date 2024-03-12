@@ -62,15 +62,20 @@ form {
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
-  background: #CFC096;
+  background: #FFFFFF;
   color: #9B9A6D;
 }
 
-#message {
+#message, #image{
   width: 100%;
   padding: 10px;
   resize: vertical;
+  grid-column-start: 2;
 }
+#message_label, #image_label {
+  grid-column-start: 1;
+}
+
 
 input,
 textarea {
