@@ -87,12 +87,18 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  grid-column: 1/-1;
 }
 
 input[type="submit"]:hover {
   background-color: #3d9841;
 }
-
+button[type="reset"] {
+  grid-column: 1/-1;
+}
+button[type="reset"]:hover {
+  background-color: #b1afaf;
+}
 .radio label {
   display: inline-block;
   margin-bottom: 5px;
